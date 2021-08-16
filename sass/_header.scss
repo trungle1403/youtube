@@ -7,6 +7,7 @@
     background-color: #fff;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+    
     &-nav {
         display: flex;
         justify-content: space-between;
@@ -15,7 +16,8 @@
     &-menu {
         display: flex;
         align-items: center;
-
+        gap: 0 20px;
+        position: relative;
     }
     &-logo img{
         width: 100px;
@@ -24,9 +26,18 @@
     &-search {
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 30px;
+        @include maxw(1023px){
+            width: 70%;
+        }
+        @include maxw(767px){
+            display: none;
+        }
+        
         i {
-            font-size: 18px;position: relative;
+            font-size: 18px;
+            position: relative;
             left: 50%;
             top: 50%;
             transform: translate(-50%,-50%);
@@ -41,6 +52,13 @@
             &:focus {
                 border: 1px solid $blue-1;
             }
+            @include maxw(1023px){
+                width: 70%;
+            }
+            @include maxw(767px){
+                width: 100%;
+            }
+            
         }
         .btn-search {
             border: 1px solid $gray-2;
@@ -58,7 +76,7 @@
             border-radius: 20px;
             width: 30px;
             height: 30px;
-            
+            flex-shrink: 0;
             i {
                 color:$black-3;
             }
@@ -68,7 +86,19 @@
     &-user {
         display: flex;
         align-items: center;
+        gap: 0 20px;
 
+        .btn-search-mobile {
+            display: none;
+            @include maxw(767px){
+                display: block;
+            }
+        }
+        .btn-desktop {
+            @include maxw(767px){
+                display: none;
+            }
+        }
         .btn-user {
             width: 30px;
             height: 30px;
@@ -80,5 +110,16 @@
                 border-radius: inherit;
             }
         }
+    }
+    // show search on mobile
+    .btn-close-on-search{
+        display: none;
+    }
+    .btn-close-on-search.open-search,
+    .header-search.open-search{
+        display: flex;
+    }
+    .btn-hidden-on-search.hidden-search {
+        display: none;
     }
 }

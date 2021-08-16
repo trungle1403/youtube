@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./lib/boxicons-master/css/boxicons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../lib/boxicons-master/css/boxicons.min.css">
 </head>
 <body>
     <header class="header">
@@ -17,8 +17,8 @@
                     <div class="btn btn-menu btn-hidden-on-search">
                         <i class='bx bx-menu icon'></i>
                     </div>
-                    <a href="#" class="header-logo btn-hidden-on-search">
-                        <img src="./images/logo-header.png" alt="" class="header-img">
+                    <a href="../index.html" class="header-logo btn-hidden-on-search">
+                        <img src="../images/logo-header.png" alt="" class="header-img">
                     </a>
                     <div class="btn btn-close-on-search">
                         <i class='bx bxs-chevrons-left icon' ></i>
@@ -54,7 +54,7 @@
         </div>
     </header>
     <div class="wrapper">
-        <div class="wrap-content">
+        <div class="wrap-content video-detail">
             <div class="slidebar">
                 <ul class="slidebar-menu">
                     <li class="slidebar-item">
@@ -186,12 +186,78 @@
             </div>
 
             <div class="main-content">
+                <div class="video-container">
+                    <div class="video-screen">
+                        <iframe
+                            src="https://www.youtube.com/embed/y72_r33ca88?autoplay=0">
+                        </iframe>
+                    </div>
+                    <div class="video-tags">
+                        <a href='#' class="video-tag">#HTML</a>
+                        <a href='#' class="video-tag">#CSS</a>
+                        <a href='#' class="video-tag">#JS</a>
+                        <a href='#' class="video-tag">#SASS</a>
+                    </div>
+                    <div class="video-title">[Vietsub + Pinyin] Sơ Kiến - Tiểu Hồn & Vương Tử Ngọc | 初见 - 小魂 & 王梓鈺 (OST东宫)</div>
+                    <div class="video-desc">
+                        <div class="video-desc-left video-item">
+                            <div class="video-view">
+                                9,987,234 Tr lượt xem <span class="circle"></span>
+                            </div>
+                            <div class="video-time">1 năm trước</div>
+                        </div>
+                        <div class="video-desc-right video-item">
+                            <div class="video-number">
+                                <div class="video-like">
+                                    <i class='bx bxs-like icon   like-check'></i>
+                                    <span class='like-check'>999 N</span>
+                                </div>
+                                <div class="video-dislike">
+                                    <i class='bx bxs-dislike icon'></i>
+                                    <span>789</span>
+                                </div>
+                            </div>
+                            <div class="video-share">
+                                <i class='bx bxs-share bx-flip-horizontal icon' ></i>
+                                <span>Share</span>
+                            </div>
+                            <div class="video-save">
+                                <i class='bx bx-list-plus icon'></i>
+                                <span>Save</span>
+                            </div>
+                            <div class="video-more">
+                                <i class='bx bx-dots-horizontal-rounded icon' ></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-channel">
+                        <div class="video-channel-info">
+                            <a href="#1" class="channel-media">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLRSYuMMJXrGU7CNYuvObmqdR_Jmng3r5WyISAVA=s48-c-k-c0x00ffffff-no-rj" alt="" class="channel-img">
+                            </a>
+                            <div class="channel-desc">
+                                <div class="channel-info">
+                                    <a href="#1" class="channel-name">Dạ Yết</a>
+                                    <i class='bx bxs-check-circle icon' ></i>
+                                </div>
+                                <div class="channel-subcribers">
+                                    9,9 Tr người đăng ký
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-channel-sub">
+                            <button class="btn btn-sub">
+                                đăng ký
+                            </button>
+                        </div>
+                    </div>
+                </div>
                 <div class="videos">
                     <div class="video">
-                        <a href='./view/video.html' class="video-media">
+                        <a href='#' class="video-media">
                             <img src="https://i.ytimg.com/vi/hAToplkKFTQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDRfClYL1uzh5x5-NHIszBForJAzA" alt="" class="video-img">
                             <span class="video-detail-time">4:32</span>
-                            <span class="video-detail-seen" data-seen='40%'></span>
+                            <span class="video-detail-seen" data-seen='40'></span>
                             <div class="video-detail-more">
                                 <span class="video-detail-store"><i class='bx bxs-time-five icon' ></i></span>
                                 <span class="video-detail-playlist"><i class='bx bxs-playlist icon' ></i></span>
@@ -208,87 +274,6 @@
                                 <div class="author-info"><a href="#1" class="video-author-name">Dạ Yết</a></div>
                                 <div class="video-view">
                                     2,6 Tr lượt xem <span class="circle"></span>
-                                </div>
-                                <div class="video-time">1 năm trước</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <a href='#' class="video-media">
-                            <img src="https://i.ytimg.com/vi/hXN-JDnR-fo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCGVFqYhAg8Y7bODsvqhGyEHw-Kpg" alt="" class="video-img">
-                            <span class="video-detail-time">3:57</span>
-                            <span class="video-detail-seen" data-seen='100'></span>
-                            <div class="video-detail-more">
-                                <span class="video-detail-store"><i class='bx bxs-time-five icon' ></i></span>
-                                <span class="video-detail-playlist"><i class='bx bxs-playlist icon' ></i></span>
-                            </div>
-                        </a>
-                        <div class="video-content">
-                            <a href="#1" class="author-media">
-                                <img src="https://yt3.ggpht.com/ytc/AKedOLTu-gqhzUvPYu21T6wRVHKyptc-2rvkCmLHLS8Znw=s48-c-k-c0x00ffffff-no-rj" alt="" class="author-img">
-                            </a>
-                            <div class="video-desc">
-                                <h5>
-                                    <a href="#" class="video-title">[Vietsub] Sứ Thanh Hoa - Tây Qua JUN ft. Thuận Tử | 青花瓷 - 西瓜JUN ft. 特警蜀黍顺子</a>
-                                </h5>
-                                <div class="author-info"><a href="#1" class="video-author-name">Hồ ly rùa</a></div>
-                                <div class="video-view">
-                                    8,6 Tr lượt xem <span class="circle"></span>
-                                </div>
-                                <div class="video-time">4 năm trước</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <a href='#' class="video-media">
-                            <img src="https://i.ytimg.com/vi/kLu0D0r1yqA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAgt9khuPkOqtuyQZIkNc1SkqTU_g" alt="" class="video-img">
-                            <span class="video-detail-time">5:34</span>
-                            <span class="video-detail-seen" data-seen='40'></span>
-                            <div class="video-detail-more">
-                                <span class="video-detail-store"><i class='bx bxs-time-five icon' ></i></span>
-                                <span class="video-detail-playlist"><i class='bx bxs-playlist icon' ></i></span>
-                            </div>
-                        </a>
-                        <div class="video-content">
-                            <a href="#1" class="author-media">
-                                <img src="https://yt3.ggpht.com/ytc/AKedOLSdxxjVP9L-5KFy0C6d2_ZDamo3nvLA0WSMYIx5FA=s68-c-k-c0x00ffffff-no-rj" alt="" class="author-img">
-                            </a>
-                            <div class="video-desc">
-                                <h5>
-                                    <a href="#" class="video-title">[Vietsub] Lạnh lẽo - Trương Bích Thần & Dương Tông Vỹ (OST Tam Sinh Tam Thế Thập Lý Đào Hoa)</a>
-                                </h5>
-                                <div class='author-info'>
-                                    <a href="#1" class="video-author-name">Mê Mụi</a> 
-                                    <span class='icon-check'><i class='bx bxs-check-circle'></i></span>
-                                </div>
-                                <div class="video-view">
-                                    19,9 Tr lượt xem <span class="circle"></span>
-                                </div>
-                                <div class="video-time">3 năm trước</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <a href='#' class="video-media">
-                            <img src="https://i.ytimg.com/vi/mUg2d05cnG0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCBkCmJ7K0A0VKnMo1S6OtiTg4Q0g" alt="" class="video-img">
-                            <span class="video-detail-time">4:32</span>
-                            <span class="video-detail-seen" data-seen='0'></span>
-                            <div class="video-detail-more">
-                                <span class="video-detail-store"><i class='bx bxs-time-five icon' ></i></span>
-                                <span class="video-detail-playlist"><i class='bx bxs-playlist icon' ></i></span>
-                            </div>
-                        </a>
-                        <div class="video-content">
-                            <a href="#1" class="author-media">
-                                <img src="https://yt3.ggpht.com/ytc/AKedOLQP4mpD6eb04rlDGHK-Au2E-ALLgxK95085tj_kFA=s48-c-k-c0x00ffffff-no-rj" alt="" class="author-img">
-                            </a>
-                            <div class="video-desc">
-                                <h5>
-                                    <a href="#" class="video-title">IU (아이유) - 'LOVE POEM' (러브 포엠) Lyrics [Color Coded_Han_Rom_Eng]</a>
-                                </h5>
-                                <div class="author-info"><a href="#1" class="video-author-name">Zaty Farhani</a></div>
-                                <div class="video-view">
-                                    5,2 Tr lượt xem <span class="circle"></span>
                                 </div>
                                 <div class="video-time">1 năm trước</div>
                             </div>
@@ -408,12 +393,11 @@
     </div>
 
 </body>
-<script src="./lib/boxicons-master/dist/boxicons.js"></script>
+<script src="../lib/boxicons-master/dist/boxicons.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="./js/main.js"></script>
-<script>
-    mediaQuery(maxw767)
-    maxw767.addListener(mediaQuery)
+<script src="../js/main.js"></script>
+<script type="text/javascript" src='../js/detail.js'>
+
 </script>
 </html>

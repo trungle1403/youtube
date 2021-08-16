@@ -14,12 +14,10 @@
             overflow-y: scroll;
             z-index: 9998;
             background-color: #fff;
-            transition: all .4s ease;
-            padding-bottom: 100px;
+            transition: all .3s ease;
+            padding-bottom: 70px;
             &.active {
-                width: 0;
-                opacity: 0;
-                visibility: hidden;
+                transform: translateX(-100%);
             }
             @include maxw(767px) {
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -39,14 +37,13 @@
                 align-items: center;
             }
             &-link {
-                display: block;
                 padding: 10px 20px;
                 font-size: 15px;
                 width: 100%;
                 display: flex;
                 align-items: center;
                 transition: .3s linear;
-                
+                gap: 0 20px;
                 span {
                     display:-webkit-box;
                     -webkit-line-clamp:1;
@@ -74,7 +71,6 @@
                 width: 25px;
                 height: 25px;
                 border-radius: 100%;
-                margin-right: 20px;
                 &-img {
                     width: 100%;
                     height: 100%;
@@ -89,21 +85,18 @@
             width: 100%;
             margin-left: $w-slidebar;
             transition: all .3s ease;
+            padding: 25px;
             &.active {
                 margin-left: 0;
             }
             @include maxw(767px){
                 margin-left: 0;
+                padding: 15px;
             }
             .videos {
-                padding: 25px;
                 display: grid;
                 grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
                 grid-gap:30px 20px;
-
-                .video-container {
-                    cursor: pointer;
-                }
                 .video {
                     overflow: hidden;
                     &:hover .video-detail-store,
@@ -159,6 +152,14 @@
                                 color:#fff;
                                 font-size: 17px;
                             }
+                        }
+                        .video-detail-seen {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: attr(data-seen  width);
+                            height: 3px;
+                            background-color: $color-primary;
                         }
                     }
 
