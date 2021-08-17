@@ -67,3 +67,9 @@ videoData.forEach((video,index) => {
         localStorage.setItem('YoutubeLink', JSON.stringify(arrLink))
     })
 })
+
+const videoDetailSeen = document.querySelectorAll('.video-detail-seen')
+videoDetailSeen.forEach(item =>{
+    dataSeen = item.getAttribute('data-seen')
+    item.style.width = dataSeen
+})

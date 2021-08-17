@@ -373,7 +373,15 @@ li {
   position: absolute;
   top: 30%;
   left: 50px;
+  padding: 0 20px;
   color: #fff;
+}
+@media screen and (max-width: 767px) {
+  .wrapper .wrap-content .main-content .banner-container .banner-content {
+    left: 0;
+    top: 20%;
+    font-size: 20px;
+  }
 }
 .wrapper .wrap-content .main-content .banner-container .banner-content .banner-title {
   text-transform: capitalize;
@@ -457,7 +465,6 @@ li {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: attr(data-seen width);
   height: 3px;
   background-color: #f00;
 }

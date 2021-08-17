@@ -110,8 +110,13 @@
                     position: absolute;
                     top: 30%;
                     left: 50px;
+                    padding: 0 20px;
                     color: #fff;
-
+                    @include maxw(767px){
+                        left: 0;
+                        top: 20%;
+                        font-size: 20px;
+                    }
                     .banner-title {
                         text-transform: capitalize;
                         font-size: 25px;
@@ -193,7 +198,6 @@
                             position: absolute;
                             bottom: 0;
                             left: 0;
-                            width: attr(data-seen  width);
                             height: 3px;
                             background-color: $color-primary;
                         }
