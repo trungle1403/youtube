@@ -118,6 +118,18 @@ li {
   margin: 5px 0;
 }
 
+.user-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.user-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
 .header {
   padding: 15px 0;
   position: fixed;
@@ -343,10 +355,45 @@ li {
     padding: 15px;
   }
 }
+.wrapper .wrap-content .main-content .banner-container {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.wrapper .wrap-content .main-content .banner-container .banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.wrapper .wrap-content .main-content .banner-container .banner-content {
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  color: #fff;
+}
+.wrapper .wrap-content .main-content .banner-container .banner-content .banner-title {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.wrapper .wrap-content .main-content .banner-container .banner-content .btn-banner {
+  background-color: #0077b6;
+  display: inline-block;
+  padding: 12px 15px;
+  border-radius: 3px;
+  font-weight: 600;
+  user-select: none;
+}
 .wrapper .wrap-content .main-content .videos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px 20px;
+  height: fit-content;
 }
 .wrapper .wrap-content .main-content .videos .video {
   overflow: hidden;
@@ -608,24 +655,29 @@ li {
 }
 .video-detail .main-content .video-container .video-channel {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .video-detail .main-content .video-container .video-channel-info {
   display: flex;
-  align-items: center;
   gap: 0 15px;
 }
 .video-detail .main-content .video-container .video-channel-info .channel-media {
   width: 50px;
   height: 50px;
   border-radius: 100%;
+  flex-shrink: 0;
 }
 .video-detail .main-content .video-container .video-channel-info .channel-media .channel-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: inherit;
+}
+.video-detail .main-content .video-container .video-channel-info .channel-desc {
+  overflow: hidden;
 }
 .video-detail .main-content .video-container .video-channel-info .channel-desc .channel-info {
   display: flex;
@@ -642,6 +694,48 @@ li {
 .video-detail .main-content .video-container .video-channel-info .channel-desc .channel-subcribers {
   font-size: 13px;
   color: #777;
+  margin-bottom: 30px;
+}
+.video-detail .main-content .video-container .video-channel-info .channel-desc .channel-desc-detail {
+  width: 100%;
+  height: 75px;
+  overflow: hidden;
+}
+.video-detail .main-content .video-container .video-channel-info .channel-desc .channel-desc-detail.active {
+  height: auto;
+}
+.video-detail .main-content .video-container .video-channel-info .channel-desc .channel-desc-detail .desc-detail {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.video-detail .main-content .video-container .video-channel-info .channel-desc .channel-desc-detail .desc-detail i {
+  color: #555;
+}
+.video-detail .main-content .video-container .video-channel-info .channel-desc .channel-desc-detail .desc-detail a {
+  color: #0077b6;
+}
+@media screen and (max-width: 467px) {
+  .video-detail .main-content .video-container .video-channel-info .channel-desc .channel-desc-detail .desc-detail a {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+}
+.video-detail .main-content .video-container .video-channel-info .channel-desc .btn-show-hide {
+  margin-top: 10px;
+  width: fit-content;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #777;
+  font-size: 15px;
+  cursor: pointer;
 }
 .video-detail .main-content .video-container .video-channel-sub .btn-sub {
   padding: 10px 18px;
@@ -650,6 +744,132 @@ li {
   background-color: #c00;
   font-weight: 600;
   border-radius: 3px;
+}
+.video-detail .main-content .video-container .video-comments {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+  margin-bottom: 20px;
+}
+.video-detail .main-content .video-container .video-comments .video-comment {
+  color: #333;
+}
+.video-detail .main-content .video-container .video-comments .video-filter {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  color: #333;
+  cursor: pointer;
+}
+.video-detail .main-content .video-container .video-comments .video-filter i {
+  font-size: 21px;
+}
+.video-detail .main-content .video-container .video-comments .video-filter span {
+  text-transform: uppercase;
+}
+.video-detail .main-content .video-container .my-comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 0 15px;
+}
+.video-detail .main-content .video-container .my-comment img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.video-detail .main-content .video-container .my-comment .comment-input {
+  width: 100%;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+.video-detail .main-content .video-container .my-comment .comment-input:focus {
+  border-bottom: 1px solid #333;
+}
+.video-detail .main-content .video-container .comment-list {
+  width: 100%;
+}
+.video-detail .main-content .video-container .comment-list .comment-item {
+  display: flex;
+  gap: 0 10px;
+  margin-bottom: 30px;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-img .user-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info {
+  font-size: 15px;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-info {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+  margin-bottom: 10px;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-info .user-name {
+  color: #555;
+  font-weight: bold;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-info .user-time {
+  color: #777;
+  font-size: 13px;
+  cursor: pointer;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-comment {
+  color: #333;
+  margin-bottom: 20px;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-more {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-more .user-like,
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-more .user-dislike {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+  cursor: pointer;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-more .user-like i, .video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-more .user-like span,
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-more .user-dislike i,
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-more .user-dislike span {
+  color: #777;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-more .user-rep {
+  text-transform: uppercase;
+  color: #777;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-more .author-like {
+  width: 17px;
+  height: 17px;
+  position: relative;
+  background-color: #333;
+}
+.video-detail .main-content .video-container .comment-list .comment-item .comment-info .user-more .author-like i {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  font-size: 13px;
+  color: #f00;
+  box-shadow: white 0px 1px 4px;
 }
 .video-detail .main-content .videos {
   display: grid;

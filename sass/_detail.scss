@@ -80,7 +80,7 @@
                     .video-dislike,
                     .video-share,
                     .video-save,
-                    .video-more, {
+                    .video-more {
                         display: flex;
                         align-items: center;
                         gap: 0 5px;
@@ -120,18 +120,18 @@
 
             .video-channel {
                 display: flex;
-                align-items: center;
                 justify-content: space-between;
-
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid $gray-1;
                 &-info {
                     display: flex;
-                    align-items: center;
                     gap: 0 15px;
                     .channel-media {
                         width: 50px;
                         height: 50px;
                         border-radius: 100%;
-
+                        flex-shrink: 0;
                         .channel-img {
                             width: 100%;
                             height: 100%;
@@ -140,6 +140,7 @@
                         }
                     }
                     .channel-desc {
+                        overflow: hidden;
                         .channel-info {
                             display: flex;
                             align-items: center;
@@ -155,6 +156,49 @@
                         .channel-subcribers {
                             font-size: 13px;
                             color: $black-4;
+                            margin-bottom: 30px;
+                        }
+
+                        .channel-desc-detail {
+                            width: 100%;
+                            height: 75px;
+                            overflow: hidden;
+                            &.active {
+                                height: auto;  
+                            }
+                            .desc-detail {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+                                font-size: 15px;
+                                margin-bottom: 10px;
+                                
+                                i {
+                                    color: $black-3;
+                                }
+                                a {
+                                    color:$blue-1;
+                                    @include maxw(467px){
+                                        display:-webkit-box;
+                                        -webkit-line-clamp:1;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        word-break: break-word;
+                                    }
+                                }
+                            }
+                        }
+                        .btn-show-hide {
+                            margin-top: 10px;
+                            width: fit-content;
+                            display: inline-block;
+                            text-transform: uppercase;
+                            color:$black-4;
+                            font-size: 15px;
+                            cursor: pointer;
+                            
                         }
                     }
                 }
@@ -170,6 +214,135 @@
                     }
                 }
             }
+            .video-comments{
+                display: flex;
+                align-items: center;
+                gap: 0 30px;
+                margin-bottom: 20px;
+                .video-comment{
+                    color: $black-2;
+                }
+                .video-filter{
+                    display: flex;
+                    align-items: center;
+                    gap: 0 10px;
+                    color: $black-2;
+                    cursor: pointer;
+                    i {
+                        font-size: 21px;
+                    }
+                    span {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .my-comment {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+                gap: 0 15px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 100%;
+                    object-fit: cover;
+                    flex-shrink: 0;
+                }
+                .comment-input {
+                    width: 100%;
+                    padding: 10px 0;
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid $gray-1;
+                    transition: all .3s ease;
+                    background-color: transparent;
+                    &:focus {
+                        border-bottom: 1px solid $black-2;
+                    }
+                }
+            }
+            
+            .comment-list {
+                width: 100%;
+                .comment-item {
+                    display: flex;
+                    gap:0 10px;
+                    margin-bottom: 30px;
+
+                    .comment-img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100%;
+
+                        .user-img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: inherit;
+                        }
+                    }
+
+                    .comment-info {
+                        font-size: 15px;
+                        .user-info {
+                            display: flex;
+                            align-items: center;
+                            gap:0 5px;
+                            margin-bottom: 10px;
+                            .user-name {
+                                color:$black-3;
+                                font-weight: bold;
+                            }
+                            .user-time {
+                                color: $black-4;
+                                font-size: 13px;
+                                cursor: pointer;
+                            }
+                        }
+                        .user-comment {
+                            color: $black-2;
+                            margin-bottom: 20px;
+                        }
+                        .user-more {
+                            display: flex;
+                            align-items: center;
+                            gap:0 15px;
+                            .user-like,
+                            .user-dislike {
+                                display: flex;
+                                align-items: center;
+                                gap: 0 5px;
+                                cursor: pointer;
+                                i,span{
+                                    color: $black-4;
+                                }
+                            }
+                            .user-rep{
+                                text-transform: uppercase;
+                                color: $black-4;
+                                font-weight: 600;
+                                font-size: 13px;
+                                cursor: pointer;
+                            }
+                            .author-like {
+                                width: 17px;
+                                height: 17px;
+                                position: relative;
+                                background-color: #333;
+                                i {
+                                    position: absolute ;
+                                    bottom: -5px;
+                                    right: -5px;
+                                    font-size: 13px;
+                                    color:#f00;
+                                    box-shadow: rgb(255, 255, 255) 0px 1px 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
         }
 
         .videos {

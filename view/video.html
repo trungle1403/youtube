@@ -188,9 +188,11 @@
             <div class="main-content">
                 <div class="video-container">
                     <div class="video-screen">
-                        <iframe
-                            src="https://www.youtube.com/embed/y72_r33ca88?autoplay=0">
+                        <iframe class="embed"
+                            src="https://www.youtube.com/embed/y72_r33ca88?autoplay=1"
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                         </iframe>
+                        
                     </div>
                     <div class="video-tags">
                         <a href='#' class="video-tag">#HTML</a>
@@ -219,11 +221,11 @@
                             </div>
                             <div class="video-share">
                                 <i class='bx bxs-share bx-flip-horizontal icon' ></i>
-                                <span>Share</span>
+                                <span>Chia sẻ</span>
                             </div>
                             <div class="video-save">
                                 <i class='bx bx-list-plus icon'></i>
-                                <span>Save</span>
+                                <span>Lưu</span>
                             </div>
                             <div class="video-more">
                                 <i class='bx bx-dots-horizontal-rounded icon' ></i>
@@ -237,11 +239,45 @@
                             </a>
                             <div class="channel-desc">
                                 <div class="channel-info">
-                                    <a href="#1" class="channel-name">Dạ Yết</a>
+                                    <a href="#1" class="channel-name">Trung Lê</a>
                                     <i class='bx bxs-check-circle icon' ></i>
                                 </div>
                                 <div class="channel-subcribers">
                                     9,9 Tr người đăng ký
+                                </div>
+                                <div class="channel-desc-detail">
+                                    <div class='desc-detail'>
+                                        <i class='bx bx-happy-heart-eyes' ></i>
+                                        <div>Giao diện được thiết kế bởi Trung Lê</div>
+                                    </div>
+                                    <div class='desc-detail'>
+                                        <i class='bx bx-code-alt' ></i>
+                                        <div>Source code tại đây: <a target='_blank' href="https://github.com/trungle1403/youtube">github.com/trungle1403/youtube</a> </div>
+                                    </div>
+                                    <div class='desc-detail'>
+                                        <i class='bx bx-link-external' ></i>
+                                        <div>Link demo: <a target='_blank' href="https://trungle1403.github.io/youtube">trungle1403.github.io/youtube</a> </div>
+                                    </div>
+                                    <div class='desc-detail detail-info'>
+                                        <i class='bx bxs-hand-right' ></i>
+                                        <div>Liên hệ</div>
+                                    </div>
+                                    <div class='desc-detail'>
+                                        <i class='bx bxs-phone-call' ></i>
+                                        <div>076 286 2479</div>
+                                    </div>
+                                    <div class='desc-detail'>
+                                        <i class='bx bxl-github' ></i>
+                                        <div>My github: <a target='_blank' href="https://github.com/trungle1403">trungle1403.github.io/</a> </div>
+                                    </div>
+                                    <div class='desc-detail'>
+                                        <i class='bx bx-mail-send' ></i>
+                                        <div>My gmail: <a target='_blank' href="mailto:trungleit99@gmail.com">trungleit99@gmail.com</a> </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class='btn-show-hide'>
+                                    <div>Hiển thị thêm</div>
                                 </div>
                             </div>
                         </div>
@@ -251,13 +287,84 @@
                             </button>
                         </div>
                     </div>
+                    <div class="video-comments">
+                        <div class="video-comment">2 bình luận</div>
+                        <div class="video-filter">
+                            <i class='bx bx-menu-alt-left' ></i>
+                            <span>sắp xếp theo</span>
+                        </div>
+                    </div>
+                    <div class="my-comment">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLRSYuMMJXrGU7CNYuvObmqdR_Jmng3r5WyISAVA=s48-c-k-c0x00ffffff-no-rj" alt="">
+                        <input type="text" class='comment-input' placeholder="Bình luận công khai...">
+                    </div>
+                    <div class="comment-list">
+                        <div class="comment-item">
+                            <a href='#' class="comment-img">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLRxFGNZ5pxu4yyz2-eCEHwLUJsrrOd4531NYD8clA=s48-c-k-c0x00ffffff-no-rj" alt="" class="user-img">
+                            </a>
+                            <div class="comment-info">
+                                <div class="user-info">
+                                    <a href='#' class="user-name">
+                                        No one
+                                    </a>
+                                    <span class="user-time">1 ngày trước</span>
+                                </div>
+                                <div class="user-comment">
+                                    Good!
+                                </div>
+                                <div class="user-more">
+                                    <div class="user-like">
+                                        <i class='bx bxs-like' ></i>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="user-dislike">
+                                        <i class='bx bxs-dislike' ></i>
+                                        <span></span>
+                                    </div>
+                                    <div class="author-like user-container">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLRSYuMMJXrGU7CNYuvObmqdR_Jmng3r5WyISAVA=s48-c-k-c0x00ffffff-no-rj" alt="" class="author-img">
+                                        <i class='bx bxs-heart' ></i>
+                                    </div>
+                                    <div class="user-rep">Phản hồi</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <a href='#' class="comment-img">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLQDbuvqind4PEWR3jmrzbjBEKPrQHYRj8l4EgbHmQ=s48-c-k-c0x00ffffff-no-rj" alt="" class="user-img">
+                            </a>
+                            <div class="comment-info">
+                                <div class="user-info">
+                                    <a href='#' class="user-name">
+                                        Nguyen Trung
+                                    </a>
+                                    <span class="user-time">10 giờ trước</span>
+                                </div>
+                                <div class="user-comment">
+                                    Try it up!
+                                </div>
+                                <div class="user-more">
+                                    <div class="user-like">
+                                        <i class='bx bxs-like' ></i>
+                                        <span>1</span>
+                                    </div>
+                                    <div class="user-dislike">
+                                        <i class='bx bxs-dislike' ></i>
+                                        <span></span>
+                                    </div>
+                                    <div class="user-rep">Phản hồi</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="videos">
                     <div class="video">
-                        <a href='#' class="video-media">
-                            <img src="https://i.ytimg.com/vi/hAToplkKFTQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDRfClYL1uzh5x5-NHIszBForJAzA" alt="" class="video-img">
+                        <a href='#'  data-view='i4YI3V3NNVU' data-title='[Vietsub+piyin] Sơ kiến - Dư Chiêu Nguyên & Diệp Lý' class="video-media video-data">
+                            <img src="https://i.ytimg.com/vi/i4YI3V3NNVU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCgDxd6pIKCexCK5N9A7-tiDhJGdA" alt="" class="video-img">
                             <span class="video-detail-time">4:32</span>
-                            <span class="video-detail-seen" data-seen='40'></span>
+                            <span class="video-detail-seen" data-seen='40%'></span>
                             <div class="video-detail-more">
                                 <span class="video-detail-store"><i class='bx bxs-time-five icon' ></i></span>
                                 <span class="video-detail-playlist"><i class='bx bxs-playlist icon' ></i></span>
@@ -269,7 +376,7 @@
                             </a>
                             <div class="video-desc">
                                 <h5>
-                                    <a href="#" class="video-title">[Vietsub+piyin] Sơ kiến - Dư Chiêu Nguyên & Diệp Lý</a>
+                                    <a href="#" data-view='i4YI3V3NNVU' data-title='[Vietsub+piyin] Sơ kiến - Dư Chiêu Nguyên & Diệp Lý' class="video-title video-data">[Vietsub+piyin] Sơ kiến - Dư Chiêu Nguyên & Diệp Lý</a>
                                 </h5>
                                 <div class="author-info"><a href="#1" class="video-author-name">Dạ Yết</a></div>
                                 <div class="video-view">
@@ -280,33 +387,7 @@
                         </div>
                     </div>
                     <div class="video">
-                        <a href='#' class="video-media">
-                            <img src="https://i.ytimg.com/vi/hAToplkKFTQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDRfClYL1uzh5x5-NHIszBForJAzA" alt="" class="video-img">
-                            <span class="video-detail-time">4:32</span>
-                            <span class="video-detail-seen" data-seen='40'></span>
-                            <div class="video-detail-more">
-                                <span class="video-detail-store"><i class='bx bxs-time-five icon' ></i></span>
-                                <span class="video-detail-playlist"><i class='bx bxs-playlist icon' ></i></span>
-                            </div>
-                        </a>
-                        <div class="video-content">
-                            <a href="#1" class="author-media">
-                                <img src="https://yt3.ggpht.com/ytc/AKedOLRwOoAoRECM3p8JH9e-Uj5l6OV8jEt9Z8aRUCdqBw=s68-c-k-c0x00ffffff-no-rj" alt="" class="author-img">
-                            </a>
-                            <div class="video-desc">
-                                <h5>
-                                    <a href="#" class="video-title">[Vietsub+piyin] Sơ kiến - Dư Chiêu Nguyên & Diệp Lý</a>
-                                </h5>
-                                <div class="author-info"><a href="#1" class="video-author-name">Dạ Yết</a></div>
-                                <div class="video-view">
-                                    2,6 Tr lượt xem <span class="circle"></span>
-                                </div>
-                                <div class="video-time">1 năm trước</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <a href='#' class="video-media">
+                        <a href='#'  data-view="lbNPMskXNHo" data-title="[Vietsub] Hồng chiêu nguyện - Từ Vi" class="video-media video-data">
                             <img src="https://i.ytimg.com/vi/hXN-JDnR-fo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCGVFqYhAg8Y7bODsvqhGyEHw-Kpg" alt="" class="video-img">
                             <span class="video-detail-time">3:57</span>
                             <span class="video-detail-seen" data-seen='100'></span>
@@ -321,7 +402,7 @@
                             </a>
                             <div class="video-desc">
                                 <h5>
-                                    <a href="#" class="video-title">[Vietsub] Sứ Thanh Hoa - Tây Qua JUN ft. Thuận Tử | 青花瓷 - 西瓜JUN ft. 特警蜀黍顺子</a>
+                                    <a href="#" data-view="lbNPMskXNHo" data-title="[Vietsub] Hồng chiêu nguyện - Từ Vi" class="video-title video-data">[Vietsub] Hồng chiêu nguyện - Từ Vi</a>
                                 </h5>
                                 <div class="author-info"><a href="#1" class="video-author-name">Hồ ly rùa</a></div>
                                 <div class="video-view">
@@ -332,10 +413,10 @@
                         </div>
                     </div>
                     <div class="video">
-                        <a href='#' class="video-media">
-                            <img src="https://i.ytimg.com/vi/kLu0D0r1yqA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAgt9khuPkOqtuyQZIkNc1SkqTU_g" alt="" class="video-img">
+                        <a href='#'  data-view="dAR8ZD3zhFE" data-title="[lyrics + vietsub] Là em tự đa tình 是我在做多情种 - Hồ Dương Lâm 胡杨林" class="video-media video-data">
+                            <img src="https://i.ytimg.com/an_webp/dAR8ZD3zhFE/mqdefault_6s.webp?du=3000&sqp=CKm67YgG&rs=AOn4CLB8VHF-cxD-J4RW1mxwsNScgQRprw" alt="" class="video-img">
                             <span class="video-detail-time">5:34</span>
-                            <span class="video-detail-seen"  data-seen='20%'></span>
+                            <span class="video-detail-seen" data-seen='40'></span>
                             <div class="video-detail-more">
                                 <span class="video-detail-store"><i class='bx bxs-time-five icon' ></i></span>
                                 <span class="video-detail-playlist"><i class='bx bxs-playlist icon' ></i></span>
@@ -347,7 +428,7 @@
                             </a>
                             <div class="video-desc">
                                 <h5>
-                                    <a href="#" class="video-title">[Vietsub] Lạnh lẽo - Trương Bích Thần & Dương Tông Vỹ (OST Tam Sinh Tam Thế Thập Lý Đào Hoa)</a>
+                                    <a href="#"  data-view="dAR8ZD3zhFE" data-title="[lyrics + vietsub] Là em tự đa tình 是我在做多情种 - Hồ Dương Lâm 胡杨林" class="video-title video-data">[lyrics + vietsub] Là em tự đa tình 是我在做多情种 - Hồ Dương Lâm 胡杨林</a>
                                 </h5>
                                 <div class='author-info'>
                                     <a href="#1" class="video-author-name">Mê Mụi</a> 
@@ -361,10 +442,10 @@
                         </div>
                     </div>
                     <div class="video">
-                        <a href='#' class="video-media">
-                            <img src="https://i.ytimg.com/vi/mUg2d05cnG0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCBkCmJ7K0A0VKnMo1S6OtiTg4Q0g" alt="" class="video-img">
+                        <a href='#' data-view="9SRbvu4zFpY" data-title="[Vietsub+Tiktok] Người Từng Yêu - Nhậm Nhiên | 爱过的人 - 任然 | Nhạc Hoa tâm trạng" class="video-media video-data">
+                            <img src="https://i.ytimg.com/vi/9SRbvu4zFpY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBVDgZpbOqfjKx7m_CMizzrtfuTJA" alt="" class="video-img">
                             <span class="video-detail-time">4:32</span>
-                            <span class="video-detail-seen" data-seen='76%'></span>
+                            <span class="video-detail-seen" data-seen='0'></span>
                             <div class="video-detail-more">
                                 <span class="video-detail-store"><i class='bx bxs-time-five icon' ></i></span>
                                 <span class="video-detail-playlist"><i class='bx bxs-playlist icon' ></i></span>
@@ -376,19 +457,122 @@
                             </a>
                             <div class="video-desc">
                                 <h5>
-                                    <a href="#" class="video-title">IU (아이유) - 'LOVE POEM' (러브 포엠) Lyrics [Color Coded_Han_Rom_Eng]</a>
+                                    <a href="#" data-view="9SRbvu4zFpY" data-title="[Vietsub+Tiktok] Người Từng Yêu - Nhậm Nhiên | 爱过的人 - 任然 | Nhạc Hoa tâm trạng" class="video-title video-data">[Vietsub+Tiktok] Người Từng Yêu - Nhậm Nhiên | 爱过的人 - 任然 | Nhạc Hoa tâm trạng</a>
                                 </h5>
-                                <div class="author-info"><a href="#1" class="video-author-name">Zaty Farhani</a></div>
+                                <div class="author-info"><a href="#1" class="video-author-name">Dạ Yết</a></div>
                                 <div class="video-view">
-                                    5,2 Tr lượt xem <span class="circle"></span>
+                                    1,1 Tr lượt xem <span class="circle"></span>
                                 </div>
                                 <div class="video-time">1 năm trước</div>
                             </div>
                         </div>
                     </div>
+                    <div class="video">
+                        <a href='#' data-view="mUg2d05cnG0" data-title="IU (아이유) - 'LOVE POEM' (러브 포엠) Lyrics [Color Coded_Han_Rom_Eng]" class="video-media video-data">
+                            <img src="https://i.ytimg.com/vi/mUg2d05cnG0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCBkCmJ7K0A0VKnMo1S6OtiTg4Q0g" alt="" class="video-img">
+                            <span class="video-detail-time">4:34</span>
+                            <span class="video-detail-seen" data-seen='0'></span>
+                            <div class="video-detail-more">
+                                <span class="video-detail-store"><i class='bx bxs-time-five icon' ></i></span>
+                                <span class="video-detail-playlist"><i class='bx bxs-playlist icon' ></i></span>
+                            </div>
+                        </a>
+                        <div class="video-content">
+                            <a href="#1" class="author-media">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLQP4mpD6eb04rlDGHK-Au2E-ALLgxK95085tj_kFA=s48-c-k-c0x00ffffff-no-rj" alt="" class="author-img">
+                            </a>
+                            <div class="video-desc">
+                                <h5>
+                                    <a href="#" data-view="mUg2d05cnG0" data-title="IU (아이유) - 'LOVE POEM' (러브 포엠) Lyrics [Color Coded_Han_Rom_Eng]" class="video-title video-data">IU (아이유) - 'LOVE POEM' (러브 포엠) Lyrics [Color Coded_Han_Rom_Eng]</a>
+                                </h5>
+                                <div class="author-info"><a href="#1" class="video-author-name">IU Official</a></div>
+                                <div class="video-view">
+                                    2,7 Tr lượt xem <span class="circle"></span>
+                                </div>
+                                <div class="video-time">1 năm trước</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <a href='#' data-view="o_nxIQTM_B0" data-title="[IU] Blueming Live Clip (2019 IU Tour Concert 'Love, poem')" class="video-media video-data">
+                            <img src="https://i.ytimg.com/vi/o_nxIQTM_B0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBPOSHZbb8CgKhJcAltPpJ9ItIjXw" alt="" class="video-img">
+                            <span class="video-detail-time">3:46</span>
+                            <span class="video-detail-seen" data-seen='0'></span>
+                            <div class="video-detail-more">
+                                <span class="video-detail-store"><i class='bx bxs-time-five icon' ></i></span>
+                                <span class="video-detail-playlist"><i class='bx bxs-playlist icon' ></i></span>
+                            </div>
+                        </a>
+                        <div class="video-content">
+                            <a href="#1" class="author-media">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLQP4mpD6eb04rlDGHK-Au2E-ALLgxK95085tj_kFA=s48-c-k-c0x00ffffff-no-rj" alt="" class="author-img">
+                            </a>
+                            <div class="video-desc">
+                                <h5>
+                                    <a href="#" data-view="o_nxIQTM_B0" data-title="[IU] Blueming Live Clip (2019 IU Tour Concert 'Love, poem')" class="video-title video-data">[IU] Blueming Live Clip (2019 IU Tour Concert 'Love, poem')</a>
+                                </h5>
+                                <div class="author-info"><a href="#1" class="video-author-name">IU Official</a></div>
+                                <div class="video-view">
+                                    22,6 Tr lượt xem <span class="circle"></span>
+                                </div>
+                                <div class="video-time">3 năm trước</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <a href='#' data-view="y72_r33ca88" data-title="For You (너를 위해) - Chen, Baekhyun, Xiumin [HAN/ROM/ENG COLOR CODED LYRICS]" class="video-media video-data">
+                            <img src="https://i.ytimg.com/vi/y72_r33ca88/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD1fXlbB0wnTMMzXXgXv4Fh-Wvu7g" alt="" class="video-img">
+                            <span class="video-detail-time">3:16</span>
+                            <span class="video-detail-seen" data-seen='0'></span>
+                            <div class="video-detail-more">
+                                <span class="video-detail-store"><i class='bx bxs-time-five icon' ></i></span>
+                                <span class="video-detail-playlist"><i class='bx bxs-playlist icon' ></i></span>
+                            </div>
+                        </a>
+                        <div class="video-content">
+                            <a href="#1" class="author-media">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLQP4mpD6eb04rlDGHK-Au2E-ALLgxK95085tj_kFA=s48-c-k-c0x00ffffff-no-rj" alt="" class="author-img">
+                            </a>
+                            <div class="video-desc">
+                                <h5>
+                                    <a href="#" data-view="y72_r33ca88" data-title="For You (너를 위해) - Chen, Baekhyun, Xiumin [HAN/ROM/ENG COLOR CODED LYRICS]" class="video-title video-data">For You (너를 위해) - Chen, Baekhyun, Xiumin [HAN/ROM/ENG COLOR CODED LYRICS]</a>
+                                </h5>
+                                <div class="author-info"><a href="#1" class="video-author-name">cheon sa</a></div>
+                                <div class="video-view">
+                                    8,5 Tr lượt xem <span class="circle"></span>
+                                </div>
+                                <div class="video-time">4 năm trước</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <a href='#' data-view="fJX0s5tjBFw" data-title="[Vietsub] Gặp em đúng lúc - Luân Tang" class="video-media video-data">
+                            <img src="https://i.ytimg.com/vi/fJX0s5tjBFw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbFJV9MkWuJqssMVhfpfB1B53ydA" alt="" class="video-img">
+                            <span class="video-detail-time">3:17</span>
+                            <span class="video-detail-seen" data-seen='0'></span>
+                            <div class="video-detail-more">
+                                <span class="video-detail-store"><i class='bx bxs-time-five icon' ></i></span>
+                                <span class="video-detail-playlist"><i class='bx bxs-playlist icon' ></i></span>
+                            </div>
+                        </a>
+                        <div class="video-content">
+                            <a href="#1" class="author-media">
+                                <img src="https://yt3.ggpht.com/ytc/AKedOLQP4mpD6eb04rlDGHK-Au2E-ALLgxK95085tj_kFA=s48-c-k-c0x00ffffff-no-rj" alt="" class="author-img">
+                            </a>
+                            <div class="video-desc">
+                                <h5>
+                                    <a href="#" data-view="fJX0s5tjBFw" data-title="[Vietsub] Gặp em đúng lúc - Luân Tang" class="video-title video-data">[Vietsub] Gặp em đúng lúc - Luân Tang</a>
+                                </h5>
+                                <div class="author-info"><a href="#1" class="video-author-name">Mê Mụi</a></div>
+                                <div class="video-view">
+                                    32,5 Tr lượt xem <span class="circle"></span>
+                                </div>
+                                <div class="video-time">3 năm trước</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -397,7 +581,7 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="../js/main.js"></script>
-<script type="text/javascript" src='../js/detail.js'>
+<script async type="text/javascript" src='../js/detail.js'>
 
 </script>
 </html>

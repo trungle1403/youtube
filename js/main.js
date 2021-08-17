@@ -47,3 +47,23 @@ btnCloseSearch.addEventListener('click',(e) => {
     btnCloseSearch.classList.toggle('open-search')
     headerSearch.classList.toggle('open-search')
 })
+
+
+const videoData = document.querySelectorAll('.video-data')
+videoData.forEach((video,index) => {
+    video.addEventListener('click', (e) => {
+        let videoId = video.getAttribute('data-view')
+        let videoTitle = video.getAttribute('data-title')
+        let getLocalStorage = localStorage.getItem('YoutubeLink')
+        if(getLocalStorage == null) {
+            arrLink = { title: '' , id: ''};
+        }else {
+            arrLink = JSON.parse(getLocalStorage)
+        }
+        let link = 'https://www.youtube.com/embed/'+videoId+'?autoplay=1'
+        
+        arrLink.id = link;
+        arrLink.title = videoTitle;
+        localStorage.setItem('YoutubeLink', JSON.stringify(arrLink))
+    })
+})
