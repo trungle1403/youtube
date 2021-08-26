@@ -5,7 +5,7 @@ const videoTitle = document.querySelector('.video-title')
 function showVideo() {
     let getLocalStorage = localStorage.getItem('YoutubeLink')
     if(getLocalStorage == null){
-        arrLink = { title: "[IU] Blueming Live Clip (2019 IU Tour Concert 'Love, poem')" , id: "o_nxIQTM_B0"};
+        arrLink = { title: "[IU] Blueming Live Clip (2019 IU Tour Concert 'Love, poem')" , id: "https://www.youtube.com/embed/o_nxIQTM_B0?autoplay=1"};
     }else {
         arrLink = JSON.parse(getLocalStorage)
     }

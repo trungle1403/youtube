@@ -7,12 +7,11 @@ btnMenu.addEventListener('click', (e) => {
     slidebar.classList.toggle('active')
     mainContent.classList.toggle('active')
 })
-// document.body.addEventListener('click', (e) => {
-//     if (e.target.matches('.slidebar')){
-//         slidebar.classList.toggle('active')
-//         mainContent.classList.toggle('active')
+// document.addEventListener("click", function (e) {
+//     if (!slidebar.contains(e.target) && !e.target.matches("btn-menu")) {
+//         slidebar.classList.remove("active");
 //     }
-// })
+// });
 const maxw767 = window.matchMedia("(max-width: 767px)")
 
 function mediaQuery(x) {
